@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AppointmentFormActivity">
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="285dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Full name: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appointmentTitle" />
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="285dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <EditText
+        android:id="@+id/userPhone"
+        android:layout_width="285dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Phone: "
+        android:inputType="number"
+        android:maxLength="11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userEmail" />
+
+    <EditText
+        android:id="@+id/userReason"
+        android:layout_width="285dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Desciption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPhone" />
+
+    <Spinner
+        android:id="@+id/dayInput"
+        android:layout_width="285dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="17dp"
+        android:text="Day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userReason" />
+
+    <Spinner
+        android:id="@+id/timeInput"
+        android:layout_width="285dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="17dp"
+        android:text="Time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayInput" />
+
+    <TextView
+        android:id="@+id/appointmentTitle"
+        android:layout_width="285dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="36dp"
+        android:text="Appointment Form"
+        android:textAlignment="center"
+        android:textColor="@color/blue_text"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="130dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="25dp"
+        android:text="cancel"
+
+        android:background="@drawable/round_button"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeInput" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="130dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text="submit"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@color/blue_text"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toEndOf="@+id/cancel"
+        app:layout_constraintTop_toBottomOf="@+id/timeInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
